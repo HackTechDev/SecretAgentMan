@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 143, in script
+    if weapon == "nothing" :
+  File "game/script.rpy", line 143, in <module>
+    if weapon == "nothing" :
+NameError: name 'weapon' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 143, in script
+    if weapon == "nothing" :
+  File "/home/util06/JEUX/RENPY/renpy-7.0.0-sdk/renpy/ast.py", line 1729, in execute
+    if renpy.python.py_eval(condition):
+  File "/home/util06/JEUX/RENPY/renpy-7.0.0-sdk/renpy/python.py", line 1943, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/util06/JEUX/RENPY/renpy-7.0.0-sdk/renpy/python.py", line 1936, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 143, in <module>
+    if weapon == "nothing" :
+NameError: name 'weapon' is not defined
+
+Linux-4.13.0-45-generic-x86_64-with-debian-stretch-sid
+Ren'Py 7.0.0.196
+Secret Agent Man 1.0
+Wed Jun 20 23:10:27 2018
